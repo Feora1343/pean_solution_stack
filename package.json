@@ -1,0 +1,29 @@
+{
+  "name": "pean_solution_stack",
+  "version": "1.0.0",
+  "description": "PEAN solution stack template",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feora1343/pean_solution_stack.git"
+  },
+  "author": "Renee Vorbeck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feora1343/pean_solution_stack/issues"
+  },
+  "homepage": "https://github.com/Feora1343/pean_solution_stack#readme",
+  "keywords": [],
+  "dependencies": {
+    "angular": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "pg": "^7.4.1"
+  }
+}
