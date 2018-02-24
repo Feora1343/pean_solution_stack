@@ -40,4 +40,3 @@ Project Folder (git repo)/
               └── bootstrap.min.js
     
 ```
-

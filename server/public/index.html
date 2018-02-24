@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Please Make Sure To Update Sources, Tags, Classes And Make Changes As You See Fit 
+This is from a previous project and has been modified to be more generic. -->
+<html lang="en" ng-app="constieApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Title Goes Here</title>
+  <script src="vendors/angular.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <h1>Header 1</h1>
+  <main ng-controller="theConstController as vm">
+  <section>
+    <h2>Header 2</h2>
+    <form>
+      <input ng-model="vm.newConst.name" type="text" placeholder="Name">
+      <br><label>Rating:</label><input ng-model="vm.newConst.rating" type="number" min="1" max="10">
+      <br><button ng-click="vm.addConst(vm.newConst)">Add Const</button>
+    </form>
+
+  </section>
+  <section>
+    <h2>All Consts</h2>
+    <table class="table">
+    <thead>
+      <tr>
+        <td>Name</td><td>Rating</td><td>Hot or Cold</td><td>Spiciness</td><td>&nbsp;</td>
+      </tr>
+    </thead>
+    <tbody ng-repeat="const in vm.constArray">
+      <tr>
+        <td>
+          <div ng-hide="const.editing">
+            {{Const.name}}
+          </div>
+          <input ng-show="const.editing" ng-model="const.name" ng-value="const.name">
+        </td>
+        <td>
+            <div ng-hide="const.editing">
+              {{const.rating}}
+            </div>
+            <input ng-show="const.editing" ng-model="const.rating" ng-value="const.rating" type="number" min="1" max="10"></td> 
+        <td>
+          <div ng-hide="const.editing">
+            {{ const.ishot=='Hot' ? 'Hot' : 'Cold' }}
+            <button ng-click="vm.toggleIsHot(const)">Change Heat</button>
+          </div>
+            <select ng-show="const.editing" ng-model="const.ishot" ng-value="const.ishot">
+              <option value="true">Hot</option>
+              <option value="false">Cold</option>
+            </select>
+        </td>
+        <td>
+          <button ng-click="vm.deleteconst(const)">Delete</button>
+          <button ng-hide="const.editing" ng-click="vm.editconst(const)">Edit</button>
+          <button ng-show="const.editing" ng-click="vm.saveconst(const)">Save</button>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  </section>
+  </main>
+</body>
+</html>
