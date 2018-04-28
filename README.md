@@ -15,6 +15,19 @@ When you install modules, they are placed in the node_modules folder of your pro
 
 Last Updated: `2/23/2018`
 
+## Server Structure And Layout
+```                          
+,________,         .-------,  _Request_    .---------,         .----------.
+|________|       ,'_____ ,'|   -> | ->   ,'________,'|        ( ~--------~ )
+| HTML 5 |      | JS     | |      |      | _______ | |        | ~--------~ |
+| CSS    |      | jQuery | |      |      | Node.js | |        | PostgreSQL |
+|        | <--  |        | |      |      | Express | | <--    | Postico    |        
+|        |      |        | ;   <- | <-   | _______ | ;        | ~--------~ |
+|________|      |________|'  _Response_  |_________|'         `.__________.'
+  Client        Client Logic                Server               Database
+        *Front End*                                  *Back End*              
+```
+
 # Package.json and Express Install Commands
 
 Folder Structure:
@@ -37,6 +50,5 @@ Project Folder (git repo)/
         ├── /vendors
         |     └── angular.min.js
         └── /styles
-              └── bootstrap.min.js
     
 ```
