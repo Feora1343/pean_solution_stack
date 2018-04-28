@@ -50,5 +50,5 @@ Project Folder (git repo)/
         ├── /vendors
         |     └── angular.min.js
         └── /styles
-    
+              └── styles.css
 ```
