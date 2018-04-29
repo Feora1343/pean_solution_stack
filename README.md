@@ -1,7 +1,7 @@
-# pean_solution_stack
-This is a folder structure template that people can use to create skeleton for a PEAN stack solution. We assume you have the necessary prereq's installed and running on your machine(s) of choice before you use this template.
+# sean_solution_stack
+This is a folder structure template that people can use to create skeleton for a SEAN stack solution. We assume you have the necessary prereq's installed and running on your machine(s) of choice before you use this template.
 
-While this generates a skeleton file structure as well as necessary files to setup a PEAN server, it is your responsibility to make sure that the necessary links and sources are coded correctly.
+While this generates a skeleton file structure as well as necessary files to setup a SEAN server, it is your responsibility to make sure that the necessary links and sources are coded correctly.
 
 It is **highly recommended** that you not fork this repo, but instead `git clone` this repo instead so you can `git pull` to get updates. Alternatively you can also download the repo as a zip file.
 
