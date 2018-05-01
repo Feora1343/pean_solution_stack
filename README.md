@@ -17,15 +17,15 @@ Last Updated: `2/23/2018`
 
 ## Server Structure And Layout
 ```                          
-,________,         .-------,  _Request_    .---------,         .----------.
-|________|       ,'_____ ,'|   -> | ->   ,'________,'|        ( ~--------~ )
-| HTML 5 |      | JS     | |      |      | _______ | |        | ~--------~ |
-| CSS    |      | jQuery | |      |      | Node.js | |        | PostgreSQL |
-|        | <--  |        | |      |      | Express | | <--    | Postico    |        
-|        |      |        | ;   <- | <-   | _______ | ;        | ~--------~ |
-|________|      |________|'  _Response_  |_________|'         `.__________.'
-  Client        Client Logic                Server               Database
-        *Front End*                                  *Back End*              
+,________,         .----------,  _Request_    .---------,  
+|________|       ,'________ ,'|   -> | ->   ,'________,'|      
+| HTML 5 |      | AngularJS | |      |      | _______ | |       
+| CSS    |      |           | |      |      | Node.js | |        
+|        | <--  |           | |      |      | Express | |          
+|        |      |           | ;   <- | <-   | _______ | ;        
+|________|      |___________|'  _Response_  |_________|'         
+  Client        Client Logic                   Server               
+       *Front End*                           *Back End*              
 ```
 
 # Package.json and Express Install Commands
